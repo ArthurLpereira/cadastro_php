@@ -36,7 +36,9 @@
                         echo "<td>" . $row['email_usuario'] . "</td>";
                         echo "<td>";
                         echo "<a href='editar.php?id_usuario=" . $row['id_usuario'] ."'>Editar<a/> |";
-                        echo "<a href='deletar.php'?id_usuario=" . $row['id_usuario'] . "'onclick =\"return confirm('tem certeza que deseja deletar esse usuario?');\">Deletar</a>";
+
+                        echo "<a href='deletar.php?id_usuario=" . $row['id_usuario'] . "'onclick =\"return confirm('tem certeza que deseja deletar esse usuario?');\">Deletar</a>";
+                        
                         echo "</td>";
                         echo "</tr>";
                     }}else{

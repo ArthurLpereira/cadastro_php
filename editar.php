@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <h2>Editar Usuário</h2>
-    <form action="edit.php?id=<?php echo htmlspecialchars($user['id_usuario']); ?>" method="post">
+    <form action="editar.php?id_usuario=<?php echo htmlspecialchars($user['id_usuario']); ?>" method="post">
         <label for="nome_usuario">Nome:</label>
         <input type="text" id="nome_usuario" name="nome_usuario" value="<?php echo htmlspecialchars($user['nome_usuario']); ?>" required>
         <br><br>
